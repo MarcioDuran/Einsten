@@ -1,12 +1,9 @@
-var DP = prompt("Qual a Distancia Percorrida")
-//DP = distancia Percorrida
-var valorEmDistancia = parseFloat(DP)
+function calculaVelocidade() {
+      var DP, TG, VM;
+      DP = document.getElementById("Distancia").value;
+      TG = document.getElementById("TempoGasto").value;
 
-var TG = prompt("Tempo Gasto")
-var ValorEmTempo= parseFloat(TG)
-// TG = Tempo Gasto 
-
-var VM = DP/TG 
-var VM = VM.toFixed(2)
-//VM = Velocidade Media
-window.alert("Velocidade Media Percorrida é de Km/h =  "+VM)
+      var VM = (DP / TG).toFixed(2);
+      let titulo = document.querySelector("h2");
+      titulo.textContent = VM;
+}
