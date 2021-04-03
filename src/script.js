@@ -1,12 +1,11 @@
-var DP = prompt("Qual a Distancia Percorrida")
-//DP = distancia Percorrida
-var valorEmDistancia = parseFloat(DP)
+function calculaVelocidade() {
+      var VL = "299.792.458";
+      var MS = parseFloat(VL);
+      var DP;
+      DP = document.getElementById("Distancia").value;
 
-var TG = prompt("Tempo Gasto")
-var ValorEmTempo= parseFloat(TG)
-// TG = Tempo Gasto 
-
-var VM = DP/TG 
-var VM = VM.toFixed(2)
-//VM = Velocidade Media
-window.alert("Velocidade Media Percorrida é de Km/h =  "+VM)
+      var MS = (DP / MS) * 0.000001;
+      var MS = MS.toFixed(3);
+      let titulo = document.querySelector("h2");
+      titulo.textContent = "Velocidade da Luz = " + MS + "  Time Seconds   ";
+}
